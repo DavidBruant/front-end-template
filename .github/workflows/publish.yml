@@ -20,7 +20,7 @@ jobs:
       - name: Add and commit
         run: |
           git checkout -b online
-          git add build/* --force
+          git add -f build/*
           git commit -m "build of repo at commit https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA"
 
       - name: Deploy 🚀
