@@ -21,6 +21,7 @@ jobs:
         run: |
           git checkout -b online
           git add build/* --force
+          git commit -m "build of repo at commit https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA"
 
       - name: Deploy 🚀
         uses: ad-m/github-push-action@v0.6.0
