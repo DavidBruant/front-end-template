@@ -17,6 +17,8 @@ jobs:
           cp .gitignore-deploy .gitignore
           npm install
           npm run build
+          ls -l build
+          git status
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.5.9
