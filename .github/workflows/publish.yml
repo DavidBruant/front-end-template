@@ -19,7 +19,7 @@ jobs:
       
       - name: Add and commit
         run: |
-          git checkout online
+          git checkout origin/online
           git add build/* --force
 
       - name: Deploy 🚀
