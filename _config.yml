@@ -1,4 +1,5 @@
 title: Front-end template
 lang: fr
 
-optional_front_matter: true
+optional_front_matter: 
+  remove_originals: true
