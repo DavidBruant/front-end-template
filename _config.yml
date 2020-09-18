@@ -2,4 +2,4 @@ title: Front-end template
 lang: fr
 
 optional_front_matter: 
-  remove_originals: true
+  remove_originals: false

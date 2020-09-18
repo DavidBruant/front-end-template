@@ -8,6 +8,6 @@ scripts:
 
 Something should be written here:
 
-=> <section class="svelte-main"></section> <=
+<section class="svelte-main"></section>
 
 Did it work?
