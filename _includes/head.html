@@ -113,6 +113,23 @@
 
     </style>
 
+
+{% comment %} 
+Scripts are added based on the page.scripts variable
+This variable is defined in front-matter with:
+
+---
+scripts:
+    - src: "./script1.js"
+      defer: true
+      async: false
+      crossorigin: "anonymous"
+    - src: "./script2.js"
+      defer: true
+---
+
+{% endcomment %}
+
     {%- if page.scripts -%} {%- for script in page.scripts -%}
     <script src="{{ script.src }}" 
         {% if script.defer %} defer {% endif %}
