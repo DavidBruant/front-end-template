@@ -115,8 +115,8 @@
 
     {%- if page.scripts -%} {%- for script in page.scripts -%}
     <script src="{{ script.src }}" 
-        {%- if script.defer -%}defer{%- endif -%}
-        {%- if script.async -%}async{%- endif -%}
+        {%- if script.defer -%} defer {%- endif -%}
+        {%- if script.async -%} async {%- endif -%}
         crossorigin="{% if script.crossorigin %}script.crossorigin{% else %}anonymous{% endif %}"></script>
     {%- endfor -%} {%- endif -%}
 
