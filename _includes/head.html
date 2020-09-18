@@ -113,16 +113,11 @@
 
     </style>
 
-
-    <!--
-    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=always&features=default%2Ces2017%2Ces2016%2Ces2015%2Cfetch"></script>
-    -->
-
-    {% if page.scripts %}
-    {% for script in page.scripts %}
-    <script src="{{ script.src }}" {% if script.defer %}defer{% endif %}></script>
-    {% endfor %}
-    {% endif %}
-    
+    {%- if page.scripts -%} {%- for script in page.scripts -%}
+    <script src="{{ script.src }}" 
+        {%- if script.defer -%}defer{%- endif -%}
+        {%- if script.async -%}async{%- endif -%}
+        crossorigin="{% if script.crossorigin %}script.crossorigin{% else %}anonymous{% endif %}"></script>
+    {%- endfor -%} {%- endif -%}
 
 </head>
