@@ -1,13 +1,4 @@
----
-scripts:
-    - src: "./build/bundle.js"
-      defer: true
----
-
-
 # Front-end template
-
-<section class="svelte-main"></section>
 
 This repo is meant to be a template repo. Not useful in itself, but a starter kit for other projects
 
