@@ -1,3 +1,10 @@
+---
+scripts:
+    - src: "./build/bundle.js"
+      defer: true
+---
+
+
 # Front-end template
 
 <section class="svelte-main"></section>
