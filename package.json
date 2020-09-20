@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
-    "dev": "npm-run-all --parallel 'dev:*'",
-    "dev:jekyll": "bundle exec jekyll build -w --incremental",
+    "predev": "mkdir -p _site/build && ln -f build/* _site/build",
+    "dev": "npm-run-all --parallel dev:* start",
+    "dev:jekyll": "bundle exec jekyll build -w --incremental --config _config.yml,_config_dev.yml",
     "dev:rollup": "rollup -c -w",
     "start": "serve _site"
   },
