@@ -2,7 +2,7 @@
 	export let name;
 </script>
 
-<h2>Hello {name}!</h2> 
+<h2>Hello {name}!</h2>
 
 <style>
 	main {

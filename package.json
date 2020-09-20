@@ -6,7 +6,7 @@
     "dev": "npm-run-all --parallel 'dev:*'",
     "dev:jekyll": "bundle exec jekyll build -w --incremental",
     "dev:rollup": "rollup -c -w",
-    "start": "serve"
+    "start": "serve _site"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^12.0.0",
