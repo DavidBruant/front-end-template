@@ -20,9 +20,18 @@ npm run dev
 ```
 
 
-## Licence
+## Expectations and licence
+
+### Expectations
+
+I expect to be credited for the work on this repo
+
+### Licence 
 
 Everything written by contributors to this repo is under **CC0 1.0 (Public Domain)**
+
+
+#### Dependencies
 
 Bootstrap reboot is **MIT**-licenced
 Svelte and rollup config are **MIT**-licence
