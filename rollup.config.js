@@ -16,7 +16,7 @@ function serve() {
 	return {
 		writeBundle() {
 			if (server) return;
-			server = require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
+			server = require('child_process').spawn('npm', ['run', 'start'], {
 				stdio: ['ignore', 'inherit', 'inherit'],
 				shell: true
 			});
@@ -61,9 +61,9 @@ export default {
 		// the bundle has been generated
 		!production && serve(),
 
-		// Watch the `public` directory and refresh the
+		// Watch the `_site` directory and refresh the
 		// browser on changes when not in production
-		!production && livereload('public'),
+		!production && livereload('_site'),
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify

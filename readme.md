@@ -16,8 +16,6 @@ Continuous deployment is setup via Github Actions. The continuous deployement bu
 npm install
 bundle install
 
-bundle exec jekyll serve
-
 npm run dev
 ```
 
