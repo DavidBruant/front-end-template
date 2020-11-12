@@ -22,13 +22,9 @@ npm run dev
 
 ## Expectations and licence
 
-### Expectations
-
 I expect to be credited for the work on this repo
 
-### Licence 
-
-Everything written by contributors to this repo is under **CC0 1.0 (Public Domain)**
+Everything written by me and contributors to this repo is licenced under **CC0 1.0 (Public Domain)**
 
 
 #### Dependencies
