@@ -113,47 +113,10 @@
 
     </style>
 
-{% comment %} 
-Styles are added based on the page.styles variable
-This variable is defined in front-matter with:
+    {%- include polyfills.html -%}
 
----
-styles:
-    - href: "./yo.css"
-    - href: "./font-maybe.css"
----
+    {%- include layout-page-styles.html -%}
 
-{% endcomment %}
-
-    {%- if page.styles -%} {%- for style in page.styles -%}
-    <link crossorigin="anonymous" rel="stylesheet" href="{{ style.href }}">
-    {%- endfor -%} {%- endif -%}
-
-
-
-{% comment %} 
-Scripts are added based on the page.scripts variable
-This variable is defined in front-matter with:
-
----
-scripts:
-    - src: "./script1.js"
-      defer: true
-      async: false
-      crossorigin: "anonymous"
-    - src: "./script2.js"
-      defer: true
-      type: "module"
----
-
-{% endcomment %}
-
-    {%- if page.scripts -%} {%- for script in page.scripts -%}
-    <script src="{{ script.src }}" 
-        {% if script.type %} type="{{ script.type }}" {% endif %}
-        {% if script.defer %} defer {% endif %}
-        {% if script.async %} async {% endif %}
-        crossorigin="{% if script.crossorigin %}{{ script.crossorigin }}{% else %}anonymous{% endif %}"></script>
-    {%- endfor -%} {%- endif -%}
+    {%- include layout-page-scripts.html -%}
 
 </head>
