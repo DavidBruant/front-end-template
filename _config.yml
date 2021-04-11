@@ -3,3 +3,12 @@ lang: fr
 
 optional_front_matter: 
   remove_originals: false
+
+exclude:
+  - node_modules
+  - package-lock.json
+  - package.json
+  - .github
+  - LICENCE
+  - rollup.config.js
+  - scripts
