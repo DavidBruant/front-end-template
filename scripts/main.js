@@ -6,5 +6,3 @@ const app = new App({
 		name: 'from Svelte'
 	}
 });
-
-export default app;
