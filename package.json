@@ -1,14 +1,12 @@
 {
   "name": "front-end-template",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "build": "rollup -c",
-    "predev": "mkdir -p _site/build && ln -f build/* _site/build",
     "dev": "npm-run-all --parallel dev:* start",
-    "dev:jekyll": "bundle exec jekyll build -w --incremental --config _config.yml,_config_dev.yml",
     "dev:rollup": "rollup -c -w",
-    "start": "http-server _site"
+    "start": "http-server ."
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
