@@ -2,8 +2,6 @@
 
 This repo is meant to be a template repo. Not useful in itself, but a starter kit for other projects
 
-This repo is based on [Jekyll](jekyllrb.com/), so content can be written in markdown or HTML
-
 A simple theme is already set up
 
 A JavaScript bundler with [svelte](https://svelte.dev/) is set up
@@ -14,8 +12,6 @@ Continuous deployment is setup via Github Actions. The continuous deployement bu
 
 ```sh
 npm install
-bundle install
-
 npm run dev
 ```
 
